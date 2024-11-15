@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Macharia | Software Developer</title>
+    <!-- Load static files -->
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}">David Macharia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm David Macharia</h1>
+            <p class="lead">Software Developer | Tech Enthusiast</p>
+            <a href="{% url 'projects' %}" class="btn btn-light btn-lg">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p>
+                I'm a passionate software developer with experience in building dynamic, scalable, and efficient applications. I specialize in front-end development using modern JavaScript frameworks like React, but I am also proficient in back-end development with Python and Django. I love tackling complex challenges and building software that impacts people positively.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">My Skills</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML5</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">React</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">TypeScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">PostgreSQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Figma</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 David Macharia | Software Developer</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

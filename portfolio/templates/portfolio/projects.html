@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - David Macharia</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'projects' %}">Projects</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h1>My Projects</h1>
+        <div class="project-item">
+            <h2>Weather App</h2>
+            <p>A React-based weather app that fetches data from a weather API and displays real-time weather updates.</p>
+        </div>
+        <div class="project-item">
+            <h2>Task Manager</h2>
+            <p>A task management app built using React and Node.js, allowing users to create, update, and delete tasks.</p>
+        </div>
+        <div class="project-item">
+            <h2>Portfolio Website</h2>
+            <p>This portfolio website was built with Django to showcase my skills, projects, and background.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 David Macharia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
